@@ -1,0 +1,6 @@
+@HomeDelivery_HostAddress = http://localhost:5030
+
+GET {{HomeDelivery_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
