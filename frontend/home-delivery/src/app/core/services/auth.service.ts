@@ -16,6 +16,9 @@ return this.http.post<any>(`${this.api}/login`, data)
 .pipe(tap(res => this.token.set(res.token)));
 }
 
+register(data: any) {
+return this.http.post<any>(`${this.api}/register`, data);
+}
 
 logout() {
 this.token.clear();
