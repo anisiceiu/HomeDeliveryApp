@@ -11,7 +11,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './main-layout.css',
 })
 export class MainLayout {
-constructor(private auth: AuthService, private router: Router) {}
+constructor(private auth: AuthService, private router: Router) {
+  this.getUserName();
+}
 
   isAdmin() {
     return this.auth.getUserRoles().includes('Admin');
@@ -27,6 +29,12 @@ constructor(private auth: AuthService, private router: Router) {}
 
   isCustomer() {
     return this.auth.getUserRoles().includes('Customer');
+  }
+
+  getUserName()
+  {
+    let username=this.auth.getUserName();
+    return username;
   }
 
   logout() {

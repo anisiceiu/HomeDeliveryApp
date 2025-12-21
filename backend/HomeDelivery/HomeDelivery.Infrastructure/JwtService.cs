@@ -26,6 +26,7 @@ namespace HomeDelivery.Infrastructure
             var claims = new[]
             {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.GivenName, user.FullName),
             new Claim(ClaimTypes.Email, user.Email),
             new Claim(ClaimTypes.Role, user.Role)
         };
