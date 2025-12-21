@@ -55,3 +55,19 @@
 .menu-item.active::after {
   width: 100%;
 }
+
+.product-card {
+  border-radius: 8px;
+  margin: 5px;;
+}
+
+.product-img {
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 8px;
+}
+
+.card-title {
+  font-size: 15px;
+}

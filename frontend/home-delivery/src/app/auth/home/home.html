@@ -1,7 +1,7 @@
 <header>
     <div class="top-bar">
         <h2><a>Home Delivery<sup>2</sup></a></h2>
-        
+
         <div class="search-bar">
             <div class="input-group">
                 <span class="input-group-text" id="basic-addon1">
@@ -12,27 +12,482 @@
                         </path>
                     </svg>
                 </span>
-                <input type="text" class="form-control" placeholder="Search products"
-                    aria-label="Input group example" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Search products" aria-label="Input group example"
+                    aria-describedby="basic-addon1">
             </div>
         </div>
-        <div><h2 class="pointer"><i class="fa fa-user-circle" ></i></h2></div>
-        <div><h2 class="pointer"><i class="fa fa-shopping-cart"></i></h2></div>
+        <div>
+            <h2 class="pointer"><i class="fa fa-user-circle"></i></h2>
+        </div>
+        <div>
+            <h2 class="pointer"><i class="fa fa-shopping-cart"></i></h2>
+        </div>
     </div>
-<!--     <div>
+    <!--     <div>
         Your Location: {{yourLocation}}
     </div> -->
 </header>
 
 <div>
-<ul class="menu">
-  <li
-    *ngFor="let item of menuItems; let i = index"
-    class="menu-item"
-    [class.active]="i === activeIndex"
-    (click)="setActive(i)"
-  >
-    {{ item }}
-  </li>
-</ul>
+    <ul class="menu">
+        <li *ngFor="let item of menuItems; let i = index" class="menu-item" [class.active]="i === activeIndex"
+            (click)="setActive(i)">
+            {{ item }}
+        </li>
+    </ul>
 </div>
+<div>
+
+    <div class="container py-2">
+        <div class="row">
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card product-card mb-2">
+                <div class="row no-gutters align-items-center">
+
+                    <!-- Product Image -->
+                    <div class="col-4 col-md-3">
+                        <img src="https://placehold.co/600x400" class="img-fluid product-img" alt="Product">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-8 col-md-9">
+                        <div class="card-body py-2">
+                            <h6 class="card-title mb-1">Chicken Burger</h6>
+
+                            <p class="text-muted small mb-1">
+                                Juicy grilled chicken with cheese
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-success font-weight-bold">
+                                    ৳ 250
+                                </span>
+
+                                <button class="btn btn-sm btn-outline-primary">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
