@@ -4,8 +4,13 @@ import { RoleGuard } from './core/guards/role.guard';
 import { Role } from './Role';
 import { AuthLayout } from './shared/layouts/auth-layout/auth-layout';
 import { MainLayout } from './shared/layouts/main-layout/main-layout';
+import { Home } from './auth/home/home';
 
 export const routes: Routes = [
+   {
+      path:'',
+      component:Home
+   },
     {
     path: 'auth',
     component: AuthLayout,
@@ -17,7 +22,7 @@ export const routes: Routes = [
   {
     path: '',
     component: MainLayout,
-    //canActivate: [AuthGuard],
+    canActivate: [AuthGuard],
     children: [
       {
         path: 'admin',
