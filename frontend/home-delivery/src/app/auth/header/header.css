@@ -1,0 +1,18 @@
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:12px;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+}
+.pointer{
+  cursor: pointer;
+}
+.search-bar{
+  /*   display: inline-block;
+    width: -webkit-fill-available; */
+     flex-grow: 1;       /* take all available space */
+    min-width: 0;       /* allow shrinking properly */
+}

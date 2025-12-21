@@ -58,7 +58,8 @@
 
 .product-card {
   border-radius: 8px;
-  margin: 5px;;
+  margin: 5px;
+  cursor: pointer;
 }
 
 .product-img {

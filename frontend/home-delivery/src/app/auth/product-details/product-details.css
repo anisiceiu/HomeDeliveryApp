@@ -1,0 +1,12 @@
+.product-details-card {
+  border-radius: 12px;
+}
+
+.product-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+}

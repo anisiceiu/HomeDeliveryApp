@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, NgZone } from '@angular/core';
 import { CdkAriaLive } from "../../../../node_modules/@angular/cdk/types/_a11y-module-chunk";
+import { AdminRoutingModule } from "../../features/admin/admin-routing-module";
+import { Header } from "../header/header";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, AdminRoutingModule, Header],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
