@@ -20,7 +20,11 @@
             <h2 class="pointer"><i class="fa fa-user-circle"></i></h2>
         </div>
         <div>
-            <h2 class="pointer"><i class="fa fa-shopping-cart"></i></h2>
+            <h2 (click)="openCart()" class="pointer cart-icon"><i class="fa fa-shopping-cart"></i>
+                <span class="badge-cart rounded-pill">
+                    {{getItemCount()}}
+                </span>
+            </h2>
         </div>
     </div>
     <!--     <div>

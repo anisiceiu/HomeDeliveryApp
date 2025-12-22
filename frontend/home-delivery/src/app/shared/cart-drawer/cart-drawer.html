@@ -1,0 +1,41 @@
+<!-- cart button -->
+<!-- <button class="cart-btn" (click)="toggle()">🛒 Cart</button> -->
+
+<!-- overlay -->
+<!-- <div class="overlay" *ngIf="this.cart.isOpen" (click)="close()"></div> -->
+
+<!-- drawer -->
+<aside class="cart-panel" [class.open]="this.cart.isOpen()">
+    <header>
+        <h3>Your Cart</h3>
+        <a (click)="this.cart.close()">✕</a>
+    </header>
+
+    <div class="items">
+        @for (item of cartService.cart; track $index) {
+        <div class="item">
+            <div class="name">{{ item.name }}</div>
+
+            <input type="number" min="1" [value]="item.qty"
+                (change)="cartService.updateQty($index, $any($event.target).value)" />
+
+            <div class="price">
+                {{ item.price * item.qty | number:'1.2-2' }}
+            </div>
+
+            <button class="remove" (click)="cartService.remove($index)">×</button>
+        </div>
+        }
+         @if(cartService.cart.length === 0){
+        <p class="empty">
+            Cart is empty
+        </p>
+         }
+        
+    </div>
+
+    <footer>
+        <strong>Total: {{ cartService.total() | number:'1.2-2' }}</strong>
+        <button class="checkout">Checkout</button>
+    </footer>
+</aside>

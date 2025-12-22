@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MaterialModule } from '../../material/material-module';
 
+
 @Component({
   standalone: true,
   selector: 'app-auth-layout',
