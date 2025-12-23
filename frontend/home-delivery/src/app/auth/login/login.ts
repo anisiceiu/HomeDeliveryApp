@@ -49,8 +49,8 @@ this.form = this.fb.nonNullable.group({
           case 'Admin':
             this.router.navigate(['/admin/dashboard']);
             break;
-          case 'Vendor':
-            this.router.navigate(['/vendor/dashboard']);
+          case 'Customer':
+            this.router.navigate(['/customer/dashboard']);
             break;
           case 'Delivery':
             this.router.navigate(['/delivery/dashboard']);

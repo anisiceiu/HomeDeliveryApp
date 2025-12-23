@@ -1,4 +1,9 @@
 <h6>Saved Address</h6>
+ <a [routerLink]="['/customer/add-address']"><button matFab extended >
+        <mat-icon>add</mat-icon>
+        Add new address
+      </button>
+  </a>
 <mat-list>
   <mat-list-item *ngFor="let item of items">
     <div matListItemIcon><i class="fa fa-map-marker"></i></div>

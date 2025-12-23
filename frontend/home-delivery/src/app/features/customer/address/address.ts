@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { MaterialModule } from "../../../shared/material/material-module";
 import { CommonModule } from '@angular/common';
+import { AdminRoutingModule } from "../../admin/admin-routing-module";
 
 @Component({
   selector: 'app-address',
-  imports: [MaterialModule,CommonModule],
+  imports: [MaterialModule, CommonModule, AdminRoutingModule],
   templateUrl: './address.html',
   styleUrl: './address.css',
 })
