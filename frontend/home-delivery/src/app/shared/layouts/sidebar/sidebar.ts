@@ -1,19 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AuthService } from '../../../core/services/auth.service';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './sidebar.html',
   styleUrl: './sidebar.css',
 })
 export class Sidebar {
+@Input() toggled = false;
 
   constructor(private auth: AuthService, private router: Router) {
   
 }
-
   isAdmin() {
     return this.auth.getUserRoles().includes('Admin');
   }

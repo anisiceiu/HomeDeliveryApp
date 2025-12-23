@@ -13,6 +13,12 @@ import { Sidebar } from "../sidebar/sidebar";
   styleUrl: './main-layout.css',
 })
 export class MainLayout {
+  isSidebarToggled = false;
+
+  toggleSidebar() {
+    this.isSidebarToggled = !this.isSidebarToggled;
+  }
+  
 constructor(private auth: AuthService, private router: Router) {
   this.getUserName();
 }

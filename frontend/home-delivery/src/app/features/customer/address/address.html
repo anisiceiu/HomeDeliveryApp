@@ -1,0 +1,28 @@
+<h6>Saved Address</h6>
+<mat-list>
+  <mat-list-item *ngFor="let item of items">
+    <div matListItemIcon><i class="fa fa-map-marker"></i></div>
+    <!-- Text Content -->
+    <div matListItemTitle>{{ item.title }}</div>
+    <div matListItemLine>{{ item.subtitle }}</div>
+
+    <!-- Action Buttons -->
+    <div class="list-actions" matListItemMeta>
+      <button class="mr-2"
+        mat-stroked-button
+        color="primary"
+        (click)="edit(item)"
+      >Edit
+      </button>
+
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="select(item)"
+      >
+        Select
+      </button>
+    </div>
+
+  </mat-list-item>
+</mat-list>
