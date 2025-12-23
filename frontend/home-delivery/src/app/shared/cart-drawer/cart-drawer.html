@@ -7,7 +7,8 @@
 <!-- drawer -->
 <aside class="cart-panel" [class.open]="this.cart.isOpen()">
     <header>
-        <h3>Your Cart</h3>
+        <h6>Your Cart</h6>
+        <span (click)="this.cartService.clear()">Clear Cart</span> |
         <a (click)="this.cart.close()">✕</a>
     </header>
 

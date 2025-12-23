@@ -13,6 +13,17 @@ header{
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #000;
+  gap:10px;
+}
+
+header h6{
+  flex-grow: 1;
+  flex-basis: 0%;
+}
+
+header span{
+  cursor: pointer;
+  color:red;
 }
 
 header a,header a:hover{

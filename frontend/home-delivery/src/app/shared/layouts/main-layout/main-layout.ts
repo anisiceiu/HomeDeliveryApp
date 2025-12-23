@@ -3,10 +3,12 @@ import { Router, RouterOutlet } from '@angular/router';
 import { MaterialModule } from '../../material/material-module';
 import { AuthService } from '../../../core/services/auth.service';
 import { CommonModule } from '@angular/common';
+import { Sidebar } from "../sidebar/sidebar";
+
 
 @Component({
   selector: 'app-main-layout',
-  imports: [RouterOutlet,MaterialModule,CommonModule],
+  imports: [RouterOutlet, MaterialModule, CommonModule, Sidebar],
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css',
 })

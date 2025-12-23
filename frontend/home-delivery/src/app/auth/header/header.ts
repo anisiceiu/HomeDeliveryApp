@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CartDrawerService } from '../../core/services/cart-drawer.service';
 import { CartService } from '../../core/services/cart.service';
+import { AdminRoutingModule } from "../../features/admin/admin-routing-module";
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [AdminRoutingModule],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
