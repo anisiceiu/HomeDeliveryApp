@@ -29,6 +29,7 @@ namespace HomeDelivery.Infrastructure
             {
                 FullName = dto.FullName,
                 Email = dto.Email,
+                Phone = dto.Phone,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
                 Role = dto.Role
             };
