@@ -29,6 +29,9 @@ export class AuthService {
     return !!this.token.get();
   }
 
+    getUsers() {
+    return this.http.get<any>(`${this.api}/GetUsers`);
+  }
 
   getUserRoles(): string[] {
     const token = this.token.get();

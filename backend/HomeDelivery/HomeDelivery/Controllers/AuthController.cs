@@ -1,5 +1,6 @@
 ﻿using HomeDelivery.Application.DTOs;
 using HomeDelivery.Application.Interfaces;
+using HomeDelivery.Application.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +15,14 @@ namespace HomeDelivery.Controllers
         public AuthController(IAuthService auth)
         {
             _auth = auth;
+        }
+
+        // GET: api/auth/GetUsers
+        [HttpGet("GetUsers")]
+        public async Task<IActionResult> GetUsers()
+        {
+            var users = await _auth.GetUsers();
+            return Ok(users);
         }
 
         [HttpPost("register")]

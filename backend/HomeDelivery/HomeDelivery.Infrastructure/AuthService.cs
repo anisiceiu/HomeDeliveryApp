@@ -50,6 +50,11 @@ namespace HomeDelivery.Infrastructure
                 user.Role
             );
         }
+
+        public async Task<List<User>> GetUsers()
+        {
+            return await _users.GetAllUsersAsync();
+        }
     }
 
 }

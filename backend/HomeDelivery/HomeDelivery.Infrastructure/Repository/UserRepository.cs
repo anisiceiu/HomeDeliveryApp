@@ -26,6 +26,9 @@ namespace HomeDelivery.Infrastructure.Repository
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<List<User>> GetAllUsersAsync() =>
+            await _context.Users.ToListAsync();
     }
 
 }

@@ -1,4 +1,5 @@
 ﻿using HomeDelivery.Application.DTOs;
+using HomeDelivery.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace HomeDelivery.Application.Interfaces
     {
         Task RegisterAsync(RegisterDto dto);
         Task<AuthResponse> LoginAsync(LoginDto dto);
+        Task<List<User>> GetUsers();
     }
 }

@@ -1,0 +1,42 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="form">
+
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Full Name</mat-label>
+    <input matInput formControlName="fullName">
+    <mat-error *ngIf="form.controls['fullName'].invalid">
+      Full name is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Email</mat-label>
+    <input matInput type="email" formControlName="email">
+    <mat-error>Email is invalid</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" formControlName="password">
+    <mat-error>Password must be 6 characters</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Role</mat-label>
+    <mat-select formControlName="role">
+      <mat-option value="Admin">Admin</mat-option>
+      <mat-option value="Customer">Customer</mat-option>
+      <mat-option value="Delivery">Delivery Man</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full">
+    <mat-label>Phone</mat-label>
+    <input matInput formControlName="phone" placeholder="01XXXXXXXXX">
+    <mat-error>Phone must be 11 digits</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">
+    Register
+  </button>
+
+</form>

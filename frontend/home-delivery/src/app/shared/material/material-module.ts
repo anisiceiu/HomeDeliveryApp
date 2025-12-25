@@ -8,6 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatSelectModule } from '@angular/material/select';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   exports: [
@@ -15,10 +17,12 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatCardModule,
     MatInputModule,
+    MatSelectModule,
     MatIconModule,
     MatTableModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatPaginatorModule,
   ]
 })
 export class MaterialModule {}
